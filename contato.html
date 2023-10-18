@@ -73,12 +73,13 @@
                     </div>
             </div>
         </nav>
-        <!--Fim navbar-->
+    <!--Fim navbar-->
 
-		<!--Inicio container forms -->
-        <div class="container cont-Bv">
+	<!--Inicio container forms -->
+        <div class="container cont-Bv p-3">
         	<h1 class="display-6">
-        		<i class="bi bi-send"></i>Contato
+        		<i class="bi bi-send"></i>
+                Contato
         	</h1>
         	<p class="lead">Entre em contato conosco:</p>
         	<form class="needs-validation" novalidate>
@@ -87,43 +88,49 @@
         			<label class="form-label">Nome:</label><br>
                     <div class="invalid-feedback">Campo obrigatório.</div>
         		</div>
+
         		<div class="row m-2 form-floating">
                     <input type="email" class="form-control" placeholder="Insira seu email" required>
         			<label class="form-label">Email:</label><br>
                     <div class="invalid-feedback">Campo obrigatório.</div>
         		</div>
+
         		<div class="row m-2 form-floating">
                     <textarea class="form-control" required></textarea>
                     <label class="form-label">Mensagem:</label>
                     <div class="invalid-feedback">Campo obrigatório.</div>
                 </div>
+
                 <div class="row m-1">
                     <div class="col-12 m-2">    
-                        <!-- Button trigger modal -->
+                        <!--Início Button Trigger Modal-->
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#enviarConfirm">
-                        <i class="bi bi-send"></i> Enviar
+                            <i class="bi bi-send"></i>
+                            Enviar
                         </button>
+                        <!--Fim Button Trigger Modal-->
 
-                        <!-- Modal -->
+                        <!--Início Modal-->
                         <div class="modal fade" id="enviarConfirm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Alerta</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                Você tem certeza que deseja enviar?
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
-                                <button type="submit" class="btn btn-primary">Sim</button>
-                              </div>
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">O sistema informa</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Você tem certeza que deseja enviar?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                                        <button type="submit" class="btn btn-primary">Sim</button>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <button type="submit" class="btn btn-danger">
-                            <i class="bi bi-x-circle"></i> Limpar
+                            <i class="bi bi-x-circle"></i>
+                            Limpar
                         </button>
                     </div>
                 </div>
