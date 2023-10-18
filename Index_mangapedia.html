@@ -1,130 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        
-        <title>MangaPedia</title>
 
-        <style type="text/css">
-            body{
-                background-image: url("Imagens/bgBodyMangaPedia.jpg");
-                background-attachment: fixed;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            
-            .icones{
-                color: darkblue;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            .navButtons:hover{
-                background-image: linear-gradient(to bottom, #0783E8, #055EA6);
-            }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-            .cont-Bv{
-                background-color: ghostwhite;
-            }
+    <title>MangaPedia</title>
 
-            .btnClasse{
-                margin-top: 2%;
-            }
+    <style type="text/css">
+        body {
+            background-image: url("Imagens/bgBodyMangaPedia.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
-            .tamanhoImg{
-                height: 350px;
-                width: 220px;
-            }
+        .icones {
+            color: darkblue;
+        }
 
-            .crPadding{
-                padding-bottom: 1%;
-            }
-        </style>
-    </head> 
-    <body>
+        .navButtons:hover {
+            background-image: linear-gradient(to bottom, #0783E8, #055EA6);
+        }
 
-        <!--Início navbar-->
-        <nav class="navbar navbar-expand-lg bg-primary mb-3">
-            <div class="container-fluid">
-                <h3>
-                    <i class="bi bi-book-half icones"></i>
-                </h3>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item rounded-3 mx-3 navButtons">
-                            <a class="nav-link active" aria-current="page" href="Index_mangapedia.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown me-3 rounded-3 navButtons">
-                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Categorias
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="acao.html">Ação e aventura</a></li>
-                                <li><a class="dropdown-item" href="esporte.html">Esporte</a></li>
-                                <li><a class="dropdown-item" href="romance.html">Romance</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item rounded-3 me-3 navButtons">
-                            <a class="nav-link" aria-current="page" href="contato.html">Contato</a>
-                        </li>
-                        <li class="nav-item dropdown rounded-3 me-3 navButtons">
-                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Plataformas
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="https://mangalivre.net/" target="_blank">MangaLivre</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                        <button class="btn btn-success" type="submit"><i class="bi bi-search"></i></button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <!--Fim navbar-->
+        .cont-Bv {
+            background-color: ghostwhite;
+        }
 
-        <!--Início Bem-vindo-->
-        <div class="container cont-Bv rounded-3 mb-3">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-center display-1 fw-normal">Sejam bem-vindos</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <p class="text-center display-6 fs-3">ao MangaPedia, a maior enciclopédia de mangás!</p>
-                </div>
+        .btnClasse {
+            margin-top: 2%;
+        }
+
+        .tamanhoImg {
+            height: 350px;
+            width: 220px;
+        }
+
+        .crPadding {
+            padding-bottom: 1%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Início navbar-->
+    <nav class="navbar navbar-expand-lg bg-primary mb-3">
+        <div class="container-fluid">
+            <h3>
+                <i class="bi bi-book-half icones"></i>
+            </h3>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item rounded-3 mx-3 navButtons">
+                        <a class="nav-link active" aria-current="page" href="Index_mangapedia.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown me-3 rounded-3 navButtons">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-list"></i>
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="acao.html">Ação e aventura</a></li>
+                            <li><a class="dropdown-item" href="esporte.html">Esporte</a></li>
+                            <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item rounded-3 me-3 navButtons">
+                        <a class="nav-link" aria-current="page" href="contato.html">
+                            <i class="bi bi-send-fill icones"></i>
+                            Cadastro
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown rounded-3 me-3 navButtons">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Plataformas
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="https://mangalivre.net/" target="_blank">MangaLivre</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-success" type="submit"><i class="bi bi-search"></i></button>
+                </form>
             </div>
         </div>
-        <!--Fim Bem-vindo-->
+    </nav>
+    <!--Fim navbar-->
 
-        <!--Início Carrosel de notícias-->
-        <div class="container bg-info-subtle rounded-4 mb-3">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-center display-2 fs-1 fw-normal">Confira abaixo as últimas novidades do mundo dos mangás.</h1>
-                </div>
+    <!--Início Bem-vindo-->
+    <div class="container cont-Bv rounded-3 mb-3">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center display-1 fw-normal">Sejam bem-vindos</h1>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center display-6 fs-3">ao MangaPedia, a maior enciclopédia de mangás!</p>
+            </div>
+        </div>
+    </div>
+    <!--Fim Bem-vindo-->
 
-            <div class="row">
-                <div class="col-12">
-                    <div id="carouselNoticias" class="carousel slide">
-                      <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                      </div>
-                      <div class="carousel-inner crPadding">
+    <!--Início Carrosel de notícias-->
+    <div class="container bg-info-subtle rounded-4 mb-3">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center display-2 fs-1 fw-normal">Confira abaixo as últimas novidades do mundo dos
+                    mangás.</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselNoticias" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner crPadding">
                         <div class="carousel-item active">
                             <img src="Imagens/teste1.jpg" class="d-block w-100" alt="deu erro">
                             <div class="carousel-caption d-none d-md-block">
@@ -155,184 +175,189 @@
                                 <h2 class="lead">Testando5</h2>
                             </div>
                         </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticias" data-bs-slide="prev">
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticias"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticias" data-bs-slide="next">
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticias"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
-                      </button>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
-        <!--Fim Carrossel de notícias-->
+    </div>
+    <!--Fim Carrossel de notícias-->
 
-        <!-- Início Container Ação -->
-        <div class="container cont-Bv rounded-3 mb-3">
-            <div class="row">
-                <div class="col m-3">
-                    <h1 class="text-left">
-                        <i class="bi bi-map"></i>
-                        Ação e Aventura
-                    </h1>
+    <!-- Início Container Ação -->
+    <div class="container cont-Bv rounded-3 mb-3">
+        <div class="row">
+            <div class="col m-3">
+                <h1 class="text-left">
+                    <i class="bi bi-map"></i>
+                    Ação e Aventura
+                </h1>
+            </div>
+            <div class="col m-3">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end btnClasse">
+                    <a href="acao.html"><button class="btn btn-primary" type="button">Ver Todos</button></a>
                 </div>
-                <div class="col m-3">
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end btnClasse">
-                      <a href="acao.html"><button class="btn btn-primary" type="button">Ver Todos</button></a>
-                    </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="card-group">
+            <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
+                <a href="acao.html#jjk" class="text-center p-1">
+                    <img src="Imagens/acao/jjk.jpg" class="tamanhoImg card-img">
+                </a>
+                <div class="card-body">
+                    <p class="card-text text-center">Jujutsu Kaisen</p>
                 </div>
-                <hr>
             </div>
 
-            <div class="card-group">
-                <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
-                    <a href="acao.html#jjk" class="text-center p-1">
-                        <img src="Imagens/acao/jjk.jpg" class="tamanhoImg card-img">
-                    </a>
-                    <div class="card-body">
-                        <p class="card-text text-center">Jujutsu Kaisen</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
-                    <a href="acao.html#snv" class="text-center p-1">
+            <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
+                <a href="acao.html#snv" class="text-center p-1">
                     <img src="Imagens/acao/snv.jpg" class="tamanhoImg card-img">
-                    </a>
-                    <div class="card-body">
+                </a>
+                <div class="card-body">
                     <p class="card-text text-center">Shuumatsu no Walkyrie</p>
-                    </div>
                 </div>
+            </div>
 
-                <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
-                    <a href="acao.html#cm" class="text-center p-1">
+            <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
+                <a href="acao.html#cm" class="text-center p-1">
                     <img src="Imagens/acao/cm.jpg" class="tamanhoImg card-img">
-                    </a>
-                    <div class="card-body">
+                </a>
+                <div class="card-body">
                     <p class="card-text text-center">Chainsaw Man</p>
-                    </div>
                 </div>
+            </div>
 
-                <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
-                    <a href="acao.html#opm" class="text-center p-1">
+            <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
+                <a href="acao.html#opm" class="text-center p-1">
                     <img src="Imagens/acao/opm.jpg" class="tamanhoImg card-img">
-                    </a>
-                    <div class="card-body">
+                </a>
+                <div class="card-body">
                     <p class="card-text text-center">One Punch Man</p>
-                    </div>
                 </div>
             </div>
         </div>
-        <!-- Fim countainer Ação -->
+    </div>
+    <!-- Fim countainer Ação -->
 
-        <!-- Início countainer Esporte -->
-        <div class="container cont-Bv rounded-3 mb-3">
-            <div class="row">
-                <div class="col m-3">
-                    <h1 class="text-left">
-                        <i class="bi bi-bicycle"></i>
-                        Esporte
-                    </h1>
-                </div>
-                <div class="col m-3">
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end btnClasse">
-                      <a href="esporte.html"><button class="btn btn-primary" type="button">Ver Todos</button></a>
-                    </div>
-                </div>
-                <hr>
+    <!-- Início countainer Esporte -->
+    <div class="container cont-Bv rounded-3 mb-3">
+        <div class="row">
+            <div class="col m-3">
+                <h1 class="text-left">
+                    <i class="bi bi-bicycle"></i>
+                    Esporte
+                </h1>
             </div>
-            <div class="card-group">
-                <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
-                    <a href="esporte.html#hni" class="text-center p-1">
+            <div class="col m-3">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end btnClasse">
+                    <a href="esporte.html"><button class="btn btn-primary" type="button">Ver Todos</button></a>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="card-group">
+            <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
+                <a href="esporte.html#hni" class="text-center p-1">
                     <img src="Imagens/esporte/hni.jpg" class="tamanhoImg card-img">
-                    </a>
-                    <div class="card-body">
+                </a>
+                <div class="card-body">
                     <p class="card-text text-center">Hajime no Ippo</p>
-                    </div>
                 </div>
-                <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
-                    <a href="esporte.html#bl" class="text-center p-1">
+            </div>
+            <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
+                <a href="esporte.html#bl" class="text-center p-1">
                     <img src="Imagens/esporte/bl.jpg" class="tamanhoImg card-img">
-                    </a>
-                    <div class="card-body">
+                </a>
+                <div class="card-body">
                     <p class="card-text text-center">Blue Lock</p>
-                    </div>
                 </div>
-                <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
-                    <a href="esporte.html#h" class="text-center p-1">
+            </div>
+            <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
+                <a href="esporte.html#h" class="text-center p-1">
                     <img src="Imagens/esporte/h.jpg" class="tamanhoImg card-img">
-                    </a>
-                    <div class="card-body">
+                </a>
+                <div class="card-body">
                     <p class="card-text text-center">Haikyuu</p>
-                    </div>
                 </div>
-                <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
-                    <a href="esporte.html#r" class="text-center p-1">
+            </div>
+            <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
+                <a href="esporte.html#r" class="text-center p-1">
                     <img src="Imagens/esporte/r.jpg" class="tamanhoImg card-img">
-                    </a>
-                    <div class="card-body">
+                </a>
+                <div class="card-body">
                     <p class="card-text text-center">Real</p>
-                    </div>
                 </div>
             </div>
         </div>
-        <!-- Fim countainer Esporte -->
+    </div>
+    <!-- Fim countainer Esporte -->
 
-        <!-- Início countainer Romance -->
-        <div class="container cont-Bv rounded-3 mb-3">
-            <div class="row">
-                <div class="col m-3">
-                    <h1 class="text-left">
-                        <i class="bi bi-hearts"></i>
-                        Romance
-                    </h1>
-                </div>
-                <div class="col m-3">
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end btnClasse">
-                      <a href="romance.html"><button class="btn btn-primary" type="button">Ver Todos</button></a>
-                    </div>
-                </div>
-                <hr>
+    <!-- Início countainer Romance -->
+    <div class="container cont-Bv rounded-3 mb-3">
+        <div class="row">
+            <div class="col m-3">
+                <h1 class="text-left">
+                    <i class="bi bi-hearts"></i>
+                    Romance
+                </h1>
             </div>
-            <div class="card-group">
-                <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
-                    <a href="romance.html#na" class="text-center p-1">
+            <div class="col m-3">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end btnClasse">
+                    <a href="romance.html"><button class="btn btn-primary" type="button">Ver Todos</button></a>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="card-group">
+            <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
+                <a href="romance.html#na" class="text-center p-1">
                     <img src="Imagens/romance/na.jpg" class="tamanhoImg card-img">
-                    </a>
-                    <div class="card-body">
+                </a>
+                <div class="card-body">
                     <p class="card-text text-center">Nagatoro</p>
-                    </div>
                 </div>
-                <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
-                    <a href="romance.html#ks" class="text-center p-1">
+            </div>
+            <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
+                <a href="romance.html#ks" class="text-center p-1">
                     <img src="Imagens/romance/ks.jpg" class="tamanhoImg card-img">
-                    </a>
-                    <div class="card-body">
+                </a>
+                <div class="card-body">
                     <p class="card-text text-center">Kaguya-Sama</p>
-                    </div>
                 </div>
-                <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
-                    <a href="romance.html#uc" class="text-center p-1">
+            </div>
+            <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
+                <a href="romance.html#uc" class="text-center p-1">
                     <img src="Imagens/romance/uc.jpg" class="tamanhoImg card-img">
-                    </a>
-                    <div class="card-body">
+                </a>
+                <div class="card-body">
                     <p class="card-text text-center">Uzaki-Chan</p>
-                    </div>
                 </div>
-                <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
-                    <a href="romance.html#kcc" class="text-center p-1">
+            </div>
+            <div class="col-md-3 col-sm-12 card border-light m-3 rounded-4">
+                <a href="romance.html#kcc" class="text-center p-1">
                     <img src="Imagens/romance/kcc.jpg" class="tamanhoImg card-img">
-                    </a>
-                    <div class="card-body">
+                </a>
+                <div class="card-body">
                     <p class="card-text text-center">Komi-San</p>
-                    </div>
                 </div>
             </div>
         </div>
-        <!-- Fim countainer Romance -->
+    </div>
+    <!-- Fim countainer Romance -->
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
