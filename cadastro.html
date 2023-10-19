@@ -15,7 +15,7 @@
 
     <style type="text/css">
         body {
-            background-image: url("Imagens/bgBodyMangaPedia.jpg");
+            background-image: url("Imagens/imgCad.jpg");
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
@@ -112,11 +112,44 @@
             <!--É necessário o uso de placeholder para o float label funcionar-->
 
             <div class="row m-2 form-floating">
+                <input type="password" class="form-control" placeholder="" required>
+                <label class="form-label">Senha</label><br>
+                <div class="invalid-feedback">Campo obrigatório.</div>
+            </div>
+            <!--É necessário o uso de placeholder para o float label funcionar-->
+
+            <div class="row m-2 form-floating">
                 <textarea class="form-control" placeholder="" required></textarea>
                 <label class="form-label">Mensagem:</label>
                 <div class="invalid-feedback">Campo obrigatório.</div>
             </div>
             <!--É necessário o uso de placeholder para o float label funcionar-->
+
+            <div class="row justify-content-md-center">
+                    <div class="col-md-6 col-sm-12 mb-3 form-floating">
+                        <input type="text" class="form-control" required>
+                        <label class="form-label m-2">Cidade:</label>
+                        <div class="invalid-feedback">Campo obrigatório.</div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 mb-3 form-floating">
+                        <select class="form-select form-control" required>
+                            <option></option>
+                            <option>MG</option>
+                            <option>RJ</option>
+                            <option>SP</option>
+                            <option>Japão 👍</option>
+                        </select>
+                        <label class="form-label m-2">Estado:</label>
+                        <div class="invalid-feedback">Campo obrigatório.</div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 mb-3 form-floating">
+                        <input type="text" class="form-control" required>
+                        <label class="form-label m-2">CEP:</label>
+                        <div class="invalid-feedback">Campo obrigatório.</div>
+                    </div>
+                </div>
 
             <div class="row m-1">
                 <div class="col-12 m-2">

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" href="Imagens/Icon_MangaPedia.png" sizes="32x32">
+
+    <title>Mangás: Ação & Aventura</title>
+
+    <style type="text/css">
+        body {
+            background-image: url("Imagens/imgCad.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        a {
+            color: black;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        .icones {
+            color: darkblue;
+        }
+
+        .navButtons:hover {
+            background-image: linear-gradient(to bottom, #0783E8, #055EA6);
+        }
+
+        .cont-Bv {
+            background-color: ghostwhite;
+        }
+
+        .cont-Mg {
+            background-color: lightgray;
+        }
+
+        .tamanhoImg {
+            height: 400px;
+            width: 250px;
+        }
+
+        .mgImg {
+            margin: 1%;
+        }
+
+        .linha {
+            width: 98%;
+            margin-left: 1%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Início navbar-->
+    <nav class="navbar navbar-expand-lg bg-primary mb-3">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item rounded-3 mx-3 navButtons">
+                        <a class="nav-link active" aria-current="page" href="Index_mangapedia.html">
+                            <i class="bi bi-house-fill icones"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown me-3 rounded-3 navButtons">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-list"></i>
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="acao.html">Ação e aventura</a></li>
+                            <li><a class="dropdown-item" href="esporte.html">Esporte</a></li>
+                            <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item rounded-3 me-3 navButtons">
+                        <a class="nav-link" aria-current="page" href="cadastro.html">
+                            <i class="bi bi-send-fill icones"></i>
+                            Cadastro
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown rounded-3 me-3 navButtons">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Plataformas
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="https://mangalivre.net/" target="_blank">MangaLivre</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-success" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Fim navbar-->
+
+    <!-- Inicio Container + Accordion + ListGroup + Scrollspy-->
+    <div class="container cont-Bv rounded-3 mb-3 p-3">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h1 class="my-3">
+                            <i class="bi bi-link-45deg"></i>
+                            Âncoras
+                        </h1>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="acao.html#berserk">Berserk</a></li>
+                            <li class="list-group-item"><a href="acao.html#bc">Black Clover</a></li>
+                            <li class="list-group-item"><a href="acao.html#bleach">Bleach</a></li>
+                            <li class="list-group-item"><a href="acao.html#bnh">Boku no Hero</a></li>
+                            <li class="list-group-item"><a href="acao.html#bsd">Bungou Stray Dogs</a></li>
+                            <li class="list-group-item"><a href="acao.html#cm">Chainsaw Man</a></li>
+                            <li class="list-group-item"><a href="acao.html#fa">Fullmetal Alchemist</a></li>
+                            <li class="list-group-item"><a href="acao.html#hxh">Hunter x Hunter</a></li>
+                            <li class="list-group-item"><a href="acao.html#jba">JoJo no Kimyou na Bouken Part 7: Steel Ball Run</a></li>
+                            <li class="list-group-item"><a href="acao.html#jjk">Jujutsu Kaisen</a></li>
+                            <li class="list-group-item"><a href="#kny">Kimetsu no Yaiba</a></li>
+                            <li class="list-group-item"><a href="#mp">Martial Peak</a></li>
+                            <li class="list-group-item"><a href="#n">Naruto</a></li>
+                            <li class="list-group-item"><a href="#op">One Piece</a></li>
+                            <li class="list-group-item"><a href="#opm">One Punch Man</a></li>
+                            <li class="list-group-item"><a href="#snk">Shingeki no Kyojin</a></li>
+                            <li class="list-group-item"><a href="#snw">Shuumatsu no Walkyrie</a></li>
+                            <li class="list-group-item"><a href="#vs">Vinland Saga</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Container + Accordion + ListGroup + Scrollspy-->
+
+    <!-- Inicio container mangás-->
+    <div class="container cont-Bv rounded-3 mb-3 p-2">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center m-3">
+                    <i class="bi bi-book-half"></i>
+                    Mangás
+                </h1>
+            </div>
+            <hr class="linha">
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4  mgImg">
+                <img src="Imagens/acao/kny.jpg" class="tamanhoImg" alt="Kimetsu no Yaiba">
+            </div>
+            <div class="col-md-6 scrollpsy-example" data-bs-spy="scroll" data-bs-target="#list-example"
+                data-bs-smooth-scroll="true" id="kny">
+                <h4 class="text-left">Kimetsu no Yaiba</h4><br>
+                <h6>213 Capitulos</h6><br>
+                <p>O mangá conta a história de Tanjiro, o filho mais velho de uma família que é massacrada por um
+                    demônio e, a única sobrevivente do incidente foi umas das suas irmãs, que por causa do massacre
+                    acaba se transformando em um demônio. Então, o protagonista, Tanjiro, sai em uma jornada para tentar
+                    achar uma ''cura'' para a sua irmã...</p>
+                <div class="alert alert-danger configAlert" role="alert">
+                    <button type="button" class="btn btn-danger" disabled><h6 class="display-6 fw-bold">16</h6></button> Não recomendado para menores de 16
+                </div>
+                <p>Onde ler: MangáLivre</p>
+            </div>
+            <hr class="linha">
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4  mgImg">
+                <img src="Imagens/acao/mp.jpg" class="tamanhoImg" alt="Martial Peak">
+            </div>
+            <div class="col-md-6" id="mp">
+                <h4 class="text-left">Matial Peak</h4><br>
+                <h6>3587 Capitulos</h6><br>
+                <p>A jornada para o pico marcial é solitária, solitária e longa. Diante da adversidade, você deve sobreviver e permanecer inflexível. Só então você pode romper e continuar em sua jornada para se tornar o mais forte. O High Heaven Pavilion testa seus discípulos da maneira mais dura possível para prepará-los para tal jornada. Um dia, o humilde varredor Yang Kai conseguiu obter um misterioso livro negro, colocando-o no caminho para o auge do mundo marcial.</p>
+                <div class="alert alert-warning configAlert" role="alert">
+                    <button type="button" class="btn btn-warning " disabled><h6 class="display-6 fw-bold">14</h6></button> Não recomendado para menores de 14
+                </div>
+                <p>Onde ler: MangáLivre</p>
+            </div>
+            <hr class="linha">
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4  mgImg">
+                <img src="Imagens/acao/n.jpg" class="tamanhoImg" alt="Naruto">
+            </div>
+            <div class="col-md-6" id="n">
+                <h4 class="text-left">Naruto</h4><br>
+                <h6>718 Capitulos</h6><br>
+                    <p>Naruto Uzumaki é um menino que vive em Konohagakure no Sato ou simplesmente Konoha ou Vila Oculta da
+                    Folha, a vila ninja do País do Fogo. Quando ainda bebê, Naruto teve aprisionada em seu corpo a
+                    Kyuubi no Youko por Minato Namikaze (quarto Hokage, e seu pai), com a finalidade de salvar a Vila da
+                    Folha. Desde então, Naruto é visto por muitas pessoas como um monstro, não só pelos familiares das
+                    pessoas mortas pela Kyuubi, mas também por pessoas que não toleram suas brincadeiras, já que o mesmo
+                    é extremamente hiperativo, incompreendido e solitário. Naruto sonha em se tornar o Hokage de sua
+                    vila, um ninja poderoso e respeitado, para assim poder ser reconhecido por todos.</p>
+                <div class="alert alert-warning configAlert" role="alert">
+                    <button type="button" class="btn btn-warning " disabled><h6 class="display-6 fw-bold ">14</h6></button> Não recomendado para menores de 14
+                </div>
+                <p>Onde ler: MangáLivre</p>
+            </div>
+        </div>
+        <hr class="linha">
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4  mgImg">
+                <img src="Imagens/acao/op.jpg" class="tamanhoImg" alt="One Piece">
+            </div>
+            <div class="col-md-6" id="op">
+                <h4 class="text-left">One piece</h4><br>
+                <h6>1095 Capitulos</h6><br>
+                <p>No mundo de One Piece, Gol D. Roger era conhecido como o “Rei dos Piratas”, o ser mais forte e infame que navegou na Grand Line. A captura e execução de Roger pelo Governo Mundial trouxe uma mudança em todo o mundo. Suas últimas palavras antes de sua morte revelaram a existência do maior tesouro do mundo, One Piece. Foi essa revelação que trouxe a Grande Era dos Piratas, homens que sonhavam em encontrar One Piece – que promete uma quantidade ilimitada de riquezas e fama – e muito possivelmente o pináculo da glória e o título de Rei dos Piratas.</p>
+                <div class="alert alert-warning configAlert" role="alert">
+                    <button type="button" class="btn btn-warning " disabled><h6 class="display-6 fw-bold">14</h6></button> Não recomendado para menores de 14
+                </div>
+                <p>Onde ler: MangáLivre</p>
+            </div>
+            <hr class="linha">
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4  mgImg">
+                <img src="Imagens/acao/opm.jpg" class="tamanhoImg" alt="One Punch Man">
+            </div>
+            <div class="col-md-6" id="opm">
+                <h4 class="text-left">One Punch Man</h4><br>
+                <h6>304 Capitulos</h6><br>
+                <p>Conta o dia-a-dia de um herói normal que está infeliz por ser forte o bastante para derrotar
+                        todos os seus oponentes com apenas um soco, já que isso não lhe traz mais a sensação de
+                        adrenalina ao enfrentar um inimigo poderoso...</p>
+                <div class="alert alert-warning configAlert" role="alert">
+                    <button type="button" class="btn btn-warning " disabled><h6 class="display-6 fw-bold">14</h6></button> Não recomendado para menores de 14
+                </div>
+                <p>Onde ler: MangáLivre</p>
+            </div>
+            <hr class="linha">
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4  mgImg">
+                <img src="Imagens/acao/snk.jpg" class="tamanhoImg" alt="Shingeki no Kyojin">
+            </div>
+            <div class="col-md-6" id="snk">
+                <h4 class="text-left">Shingeki no Kyojin</h4><br>
+                <h6>243 Capitulos</h6><br>
+                <p>Centenas de anos atrás, surgiram criaturas horríveis que se assemelhavam a humanos. Esses gigantes imponentes e estúpidos, chamados de “titãs”, provaram ser uma ameaça existencial, pois atacavam todos os humanos que encontravam para satisfazer um apetite aparentemente interminável. Incapaz de combater efetivamente os titãs, a humanidade foi forçada a se barricar dentro de grandes paredes que cercam o que pode muito bem ser o último porto seguro da humanidade no mundo.
+
+                Nos dias de hoje, a vida dentro das muralhas finalmente encontrou paz, já que os moradores não lidam com titãs há muitos anos. Eren Yeager, Mikasa Ackerman e Armin Arlert são três crianças que sonham em experimentar tudo o que o mundo tem a oferecer, tendo crescido ouvindo histórias das maravilhas além das paredes. Mas quando o estado de tranquilidade é repentinamente destruído pelo ataque de um gigantesco titã de 60 metros, eles aprendem rapidamente o quão cruel o mundo pode ser. Naquele dia, Eren promete a si mesmo que fará o que for preciso para erradicar todos os titãs da face da Terra, com a esperança de que um dia a humanidade possa mais uma vez viver fora dos muros sem medo.</p>
+                <div class="alert alert-danger configAlert" role="alert">
+                    <button type="button" class="btn btn-danger " disabled><h6 class="display-6 fw-bold">16</h6></button> Não recomendado para menores de 16
+                </div>
+                <p>Onde ler: MangáLivre</p>
+            </div>
+            <hr class="linha">
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4  mgImg">
+                <img src="Imagens/acao/snw.jpg" class="tamanhoImg" alt="Shuumatsu no Walkyrie">
+            </div>
+            <div class="col-md-6" id="snw">
+                <h4 class="text-left">Shuumatsu no Walkyrie</h4><br>
+                <h6>87 Capitulos</h6><br>
+                <p>A cada 1.000 anos, as divindades se reúnem sob o conselho de Valhalla para decidir sobre o direito da
+                    humanidade de continuar vivendo, ou por sua destruição, porém desta vez os deuses estão furiosos com
+                    o descaso humano para com o planeta, pendendo passim para aniquilar toda a raça humana, porém uma
+                    única valquíria os convencem de realizar o Ragnarok, uma batalha mortal entre humanos e deuses para
+                    decidir sob sua sobrevivência, 13 humanos enfrentarão 13 deuses. Serão este humanos capazes de
+                    colidir com as poderosas divindades?</p>
+                <div class="alert alert-danger configAlert" role="alert">
+                    <button type="button" class="btn btn-danger " disabled><h6 class="display-6 fw-bold">16</h6></button> Não recomendado para menores de 16
+                </div>
+                <p>Onde ler: MangáLivre</p>
+            </div>
+            <hr class="linha">
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4  mgImg">
+                <img src="Imagens/acao/vs.jpg" class="tamanhoImg" alt="Vinland Saga">
+            </div>
+            <div class="col-md-6" id="vs">
+                <h4 class="text-left">Vinland Saga</h4><br>
+                <h6>206 Capitulos</h6><br>
+                <p>Thorfinn é filho de Thors, um lendário guerreiro viking, mas que após anos no campo de batalha, descobre uma coisa mais maravilhosa que matar seus iguais. Viver sua própria vida, em paz. Mas os ventos lhe trazem uma notícia que atrapalhará seus dias de paz, e Thorfinn, seu filho, pouco sabe desta vida passada de guerra de seu pai. Após descobrir o passado de seu pai, Thorfinn se revolta contra ele, e sai para a guerra junto de seu pai, mas quando reconhece o verdadeiro valor dele, já é tarde demais. Agora Thorfinn deverá seguir sua própria vida, seguindo valores que seu pai lhe ensinou, mas sem perder sua coragem. Este é só o começo desta grande saga de Thorfinn que acompanha os Vikings no século XI!</p>
+                <div class="alert alert-danger configAlert" role="alert">
+                    <button type="button" class="btn btn-danger " disabled><h6 class="display-6 fw-bold">16</h6></button> Não recomendado para menores de 16
+                </div>
+                <p>Onde ler: MangáLivre</p>
+            </div>
+            <hr class="linha">
+        </div>
+            <hr class="linha">
+        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="acao.html" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="acao.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </div>
+    <!-- Fim container mangás-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
