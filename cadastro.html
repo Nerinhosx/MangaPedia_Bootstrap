@@ -65,7 +65,7 @@
                         </ul>
                     </li>
                     <li class="nav-item rounded-3 me-3 navButtons">
-                        <a class="nav-link" aria-current="page" href="contato.html">
+                        <a class="nav-link" aria-current="page" href="cadastro.html">
                             <i class="bi bi-send-fill icones"></i>
                             Cadastro
                         </a>
@@ -99,22 +99,24 @@
         <p class="lead">Cadastre-se para receber novidades quentinhas do mundo dos mangás:</p>
         <form class="needs-validation" novalidate>
             <div class="row m-2 form-floating">
-                <input type="text" class="form-control" required>
-                <label class="form-label">Nome:</label><br>
-                <div class="invalid-feedback">Campo obrigatório.</div>
+                <input type="text" class="form-control" id="floatingName" placeholder="" required>
+                <label for="floatingName">Nome completo</label>
             </div>
+            <!--É necessário o uso de placeholder para o float label funcionar-->
 
             <div class="row m-2 form-floating">
-                <input type="email" class="form-control" required>
-                <label class="form-label">Email:</label><br>
+                <input type="email" class="form-control" placeholder="" required>
+                <label class="form-label">Email</label><br>
                 <div class="invalid-feedback">Campo obrigatório.</div>
             </div>
+            <!--É necessário o uso de placeholder para o float label funcionar-->
 
             <div class="row m-2 form-floating">
-                <textarea class="form-control" required></textarea>
+                <textarea class="form-control" placeholder="" required></textarea>
                 <label class="form-label">Mensagem:</label>
                 <div class="invalid-feedback">Campo obrigatório.</div>
             </div>
+            <!--É necessário o uso de placeholder para o float label funcionar-->
 
             <div class="row m-1">
                 <div class="col-12 m-2">
@@ -145,10 +147,14 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-danger">
+                    <!--Fim Modal-->
+
+                    <!--Início Button limpar-->
+                    <button type="dismiss" class="btn btn-danger">
                         <i class="bi bi-x-circle"></i>
                         Limpar
                     </button>
+                    <!--Fim Button limpar-->
                 </div>
             </div>
         </form>
