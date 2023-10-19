@@ -32,6 +32,11 @@
         .cont-Bv {
             background-color: ghostwhite;
         }
+
+        .tamanhoImgNav {
+            height: 55px;
+            width: 85px;
+        }
     </style>
 </head>
 
@@ -39,6 +44,9 @@
     <!--Início navbar-->
     <nav class="navbar navbar-expand-lg bg-primary mb-3">
         <div class="container-fluid">
+            <figure>
+                <img src="Imagens/MangaPedia_Navbar.png" class="tamanhoImgNav rounded-4 mt-3">
+            </figure>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -100,20 +108,20 @@
         <form class="needs-validation" novalidate>
             <div class="row m-2 form-floating">
                 <input type="text" class="form-control" id="floatingName" placeholder="" required>
-                <label for="floatingName">Nome completo</label>
+                <label for="floatingName">Nome completo:</label>
             </div>
             <!--É necessário o uso de placeholder para o float label funcionar-->
 
             <div class="row m-2 form-floating">
                 <input type="email" class="form-control" placeholder="" required>
-                <label class="form-label">Email</label><br>
+                <label class="form-label">Email:</label><br>
                 <div class="invalid-feedback">Campo obrigatório.</div>
             </div>
             <!--É necessário o uso de placeholder para o float label funcionar-->
 
             <div class="row m-2 form-floating">
                 <input type="password" class="form-control" placeholder="" required>
-                <label class="form-label">Senha</label><br>
+                <label class="form-label">Senha:</label><br>
                 <div class="invalid-feedback">Campo obrigatório.</div>
             </div>
             <!--É necessário o uso de placeholder para o float label funcionar-->
@@ -127,26 +135,25 @@
 
             <div class="row justify-content-md-center">
                     <div class="col-md-6 col-sm-12 mb-3 form-floating">
-                        <input type="text" class="form-control" required>
-                        <label class="form-label m-2">Cidade:</label>
+                        <input type="text" class="form-control" placeholder="" required>
+                        <label class="form-label ms-3">Cidade:</label>
                         <div class="invalid-feedback">Campo obrigatório.</div>
                     </div>
 
-                    <div class="col-md-3 col-sm-12 mb-3 form-floating">
-                        <select class="form-select form-control" required>
-                            <option></option>
-                            <option>MG</option>
-                            <option>RJ</option>
-                            <option>SP</option>
-                            <option>Japão 👍</option>
+                    <div class="form-floating col-md-3 col-sm-12">
+                        <select class="form-select form-control" id="floatingSelectEstado" aria-label="Floating label select example">
+                            <option selected></option>
+                            <option value="1">MG</option>
+                            <option value="2">RJ</option>
+                            <option value="3">SP</option>
+                            <option value="4">Japão 👍</option>
                         </select>
-                        <label class="form-label m-2">Estado:</label>
-                        <div class="invalid-feedback">Campo obrigatório.</div>
+                        <label for="floatingSelectEstado">Estado</label>
                     </div>
 
                     <div class="col-md-3 col-sm-12 mb-3 form-floating">
-                        <input type="text" class="form-control" required>
-                        <label class="form-label m-2">CEP:</label>
+                        <textarea class="form-control" placeholder="" id="textCEP" required></textarea>
+                        <label class="ms-3" for="textCEP">CEP:</label>
                         <div class="invalid-feedback">Campo obrigatório.</div>
                     </div>
                 </div>
@@ -192,7 +199,8 @@
             </div>
         </form>
     </div>
-
+    <br>
+    <br>
 
 
 
