@@ -50,6 +50,23 @@
         .crPadding {
             padding-bottom: 1%;
         }
+
+        .txtCarousel{
+            color: maroon;
+            opacity: 1;
+        }
+
+        .imgCarousel{
+            opacity: 0.5;
+        }
+
+        .btnCarousel{
+            color: gold;
+        }
+
+        .carouselNossaEscola{width: 80%;}
+
+
     </style>
 </head>
 
@@ -98,7 +115,10 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
                             <li><a class="dropdown-item" href="https://mangalivre.net/" target="_blank">MangaLivre</a>
+                            <li><a class="dropdown-item" href="https://mangaschan.net/" target="_blank">Mangás Chan</a>
                             </li>
+                            <li><a class="dropdown-item" href="https://mangaplus.shueisha.co.jp/updates" target="_blank">Mangá Plus</a>
+
                         </ul>
                     </li>
                 </ul>
@@ -137,48 +157,48 @@
 
         <div class="row">
             <div class="col-12">
-                <div id="carouselNoticias" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="0" class="active"
+                <div id="carouselNoticias" class="carousel slide carouselNossaEscola " >
+                    <div class="carousel-indicators ">
+                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="0" class="active btnCarousel"
                             aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
+                            aria-label="Slide 2" class="btnCarousel"></button>
                         <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+                            aria-label="Slide 3" class="btnCarousel"></button>
                         <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
+                            aria-label="Slide 4" class="btnCarousel"></button>
                         <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="4"
-                            aria-label="Slide 5"></button>
+                            aria-label="Slide 5" class="btnCarousel"></button>
                     </div>
                     <div class="carousel-inner crPadding">
                         <div class="carousel-item active">
-                            <img src="Imagens/teste1.jpg" class="d-block w-100" alt="deu erro">
+                            <img src="Imagens/imgCarousel/spoiler.png" class="d-block w-100 " alt="deu erro">
                             <div class="carousel-caption d-none d-md-block">
-                                <h2 class="lead">Testando</h2>
+                                <h2 class="lead"></h2>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="Imagens/teste2.jpg" class="d-block w-100" alt="deu erro">
+                            <img src="Imagens/imgCarousel/gojo.jpg" class="d-block w-100 imgCarousel" alt="deu erro">
                             <div class="carousel-caption d-none d-md-block">
-                                <h2 class="lead">Testando2</h2>
+                                <h2 class="lead txtCarousel fw-bold" >Morte de Satoru Gojo em Jujutsu Kaisen</h2>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="Imagens/teste1.jpg" class="d-block w-100" alt="deu erro">
+                            <img src="Imagens/imgCarousel/cmParte2.jpg" class="d-block w-100 imgCarousel" alt="deu erro">
                             <div class="carousel-caption d-none d-md-block">
-                                <h2 class="lead">Testando3</h2>
+                                <h2 class="lead txtCarousel fw-bold">Chainsaw Man ganha continuação com outro protagonista</h2>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="Imagens/teste2.jpg" class="d-block w-100" alt="deu erro">
+                            <img src="Imagens/imgCarousel/gear5.jpg" class="d-block w-100 imgCarousel" alt="deu erro">
                             <div class="carousel-caption d-none d-md-block">
-                                <h2 class="lead">Testando4</h2>
+                                <h2 class="lead fw-bold txtCarousel">Luffy desperta o Gear 5</h2>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="Imagens/teste1.jpg" class="d-block w-100" alt="deu erro">
+                            <img src="Imagens/imgCarousel/bakugou.jpg" class="d-block w-100 imgCarousel" alt="deu erro">
                             <div class="carousel-caption d-none d-md-block">
-                                <h2 class="lead">Testando5</h2>
+                                <h2 class="lead txtCarousel fw-bold">Bakugou retorna a vida em Boku no Hero</h2>
                             </div>
                         </div>
                     </div>
