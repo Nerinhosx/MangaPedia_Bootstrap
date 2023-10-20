@@ -114,27 +114,21 @@
             <div class="row m-2 form-floating">
                 <input type="text" class="form-control" id="floatingName" placeholder="" required>
                 <label for="floatingName">Nome completo:</label>
+                <div class="invalid-feedback">Informe um nome.</div>
             </div>
             <!--É necessário o uso de placeholder para o float label funcionar-->
 
             <div class="row m-2 form-floating">
                 <input type="email" class="form-control" placeholder="" required>
                 <label class="form-label">Email:</label><br>
-                <div class="invalid-feedback">Campo obrigatório.</div>
+                <div class="invalid-feedback">Informe um email válido.</div>
             </div>
             <!--É necessário o uso de placeholder para o float label funcionar-->
 
             <div class="row m-2 form-floating">
                 <input type="password" class="form-control" placeholder="" required>
                 <label class="form-label">Senha:</label><br>
-                <div class="invalid-feedback">Campo obrigatório.</div>
-            </div>
-            <!--É necessário o uso de placeholder para o float label funcionar-->
-
-            <div class="row m-2 form-floating">
-                <textarea class="form-control" placeholder="" required></textarea>
-                <label class="form-label">Mensagem:</label>
-                <div class="invalid-feedback">Campo obrigatório.</div>
+                <div class="invalid-feedback">Informe uma senha.</div>
             </div>
             <!--É necessário o uso de placeholder para o float label funcionar-->
 
@@ -142,11 +136,11 @@
                     <div class="col-md-6 col-sm-12 mb-3 form-floating">
                         <input type="text" class="form-control" placeholder="" required>
                         <label class="form-label ms-3">Cidade:</label>
-                        <div class="invalid-feedback">Campo obrigatório.</div>
+                        <div class="invalid-feedback">Informe uma cidade.</div>
                     </div>
 
                     <div class="form-floating  col-md-3 col-sm-12">
-                        <select class="form-select form-control" id="floatingSelectEstado" aria-label="Floating label select example">
+                        <select class="form-select form-control" id="floatingSelectEstado" aria-label="Floating label select example" required>
                             <option selected></option>
                             <option value="1">MG</option>
                             <option value="2">RJ</option>
@@ -154,12 +148,13 @@
                             <option value="4">Japão 👍</option>
                         </select>
                         <label for="floatingSelectEstado" class="labelConfig">Estado</label>
+                        <div class="invalid-feedback">Selecione um estado.</div>
                     </div>
 
                     <div class="col-md-3 col-sm-12 mb-3 form-floating">
                         <textarea class="form-control" placeholder="" id="textCEP" required></textarea>
                         <label class="ms-3" for="textCEP">CEP:</label>
-                        <div class="invalid-feedback">Campo obrigatório.</div>
+                        <div class="invalid-feedback">Informe um CEP válido.</div>
                     </div>
                 </div>
 
