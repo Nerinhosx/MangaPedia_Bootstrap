@@ -2,5 +2,5 @@ services:
   - type: web
     name: MangaPedia
     buildCommand: npm install
-    startCommand: npm http-server -o Index_mangapedia.html
+    startCommand: npx http-server -o Index_mangapedia.html
     runtime: node
